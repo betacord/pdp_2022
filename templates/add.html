@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj nowy film</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <form action="/add" method="post">
+      <div class="form-group">
+        <label for="title">Tytuł</label>
+        <input type="text" class="form-control" id="title" name="title" aria-describedby="titleHelp" placeholder="Tytuł klipu">
+        <small id="titleHelp" class="form-text text-muted">Wprowadź tytuł klipu</small>
+      </div>
+      <div class="form-group">
+        <label for="description">Opis</label>
+        <input type="textarea" class="form-control" id="description" name="description" aria-describedby="descriptionHelp" placeholder="Opis klipu">
+        <small id="descriptionHelp" class="form-text text-muted">Wprowadź opis klipu</small>
+      </div>
+      <div class="form-group">
+        <label for="link_yt">Link do osadzenia klipu z YT</label>
+        <input type="text" class="form-control" id="link_yt" name="link_yt" aria-describedby="IDYTHelp" placeholder="ID klipu na YT">
+        <small id=IDYTHelp" class="form-text text-muted">Wprowadź ID klipu na YT</small>
+      </div>
+      <div class="form-group">
+        <label for="link_img">Link do miniatury na YT</label>
+        <input type="text" class="form-control" id="link_img" name="link_img" aria-describedby="imgYTHelp" placeholder="ID klipu na YT">
+        <small id=imgYTHelp" class="form-text text-muted">Wprowadź link do miniatury klipu</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Wyślij</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
